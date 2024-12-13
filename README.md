@@ -1,4 +1,6 @@
-# GeoGame: Interactive Map-Based Game
+# GeoGame:   Food Hunter
+
+https://gmt-458-web-gis.github.io/geogame1-ArgunToker/
 
 ## **Project Overview**
 GeoGame is an interactive browser-based game where users guess locations on a map based on hints provided. The game dynamically updates scores based on user interactions and offers feedback on their answers. It includes multiple difficulty levels to provide scalable challenges. The project demonstrates the integration of HTML, CSS, and JavaScript with advanced libraries like Leaflet.js.
