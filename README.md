@@ -97,6 +97,7 @@ document.querySelectorAll(".mode-button").forEach(button => {
         startGame();
     });
 });
+
 3.Restart Button:
 
 Resets the game and returns the user to the mode selection screen.
