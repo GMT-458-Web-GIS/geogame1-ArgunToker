@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍴 Yemek Avcısı</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+    <div id="game-container">
+        <!-- Giriş Ekranı -->
+        <div id="welcome-screen">
+            <h1 class="fade-in">🍴 Yemek Avcısı</h1>
+            <p>Türkiye'nin yöresel yemeklerini keşfetmeye hazır mısınız?</p>
+            <button id="go-to-rules" class="btn">Kuralları Gör</button>
+            <button id="start-game" class="btn">Oyuna Başla</button>
+        </div>
+        <!-- Kurallar Ekranı -->
+        <div id="rules-screen" class="hidden">
+            <h2>Nasıl Oynanır?</h2>
+            <ul>
+                <li>İpucuna göre doğru şehri haritada tıklayın.</li>
+                <li>İlk tahminde yanlış yaparsanız, ek bir ipucu alırsınız.</li>
+                <li>İki yanlış tahminden sonra doğru cevap gösterilir.</li>
+                <li>Doğru tahmin 10 puan kazandırır.</li>
+                <li>Oyun sonunda toplam skorunuzu görebilirsiniz.</li>
+            </ul>
+            <button id="back-to-welcome" class="btn">Ana Ekrana Dön</button>
+        </div>
+        <!-- Zorluk Seçim Ekranı -->
+        <div id="mode-selection" class="hidden">
+            <h2>Zorluk Seviyeni Seç</h2>
+            <div id="mode-buttons">
+                <button class="mode-button btn" data-mode="easy">Danilo Şef Modu</button>
+                <button class="mode-button btn" data-mode="medium">Somer Şef Modu</button>
+                <button class="mode-button btn" data-mode="hard">Mehmet Şef Modu</button>
+            </div>
+        </div>
+        <!-- Oyun Alanı -->
+        <div id="game-area" class="hidden">
+            <div id="map"></div>
+            <div id="question-container">
+                <p id="hint">İpucu burada görünecek.</p>
+            </div>
+            <p id="score">Puan: 0</p>
+        </div>
+        <!-- Skor Tablosu -->
+        <div id="leaderboard" class="hidden">
+            <h2>Oyun Bitti</h2>
+            <p id="final-score"></p>
+            <p id="time-report"></p>
+            <p id="correct-answers-report"></p>
+            <button id="restart" class="btn">Yeniden Başla</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
