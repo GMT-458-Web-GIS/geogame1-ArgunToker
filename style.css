@@ -1,0 +1,111 @@
+/* Genel Ayarlar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff5722, #e91e63);
+    color: white;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#game-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Butonlar */
+.btn {
+    background: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: transform 0.3s, background-color 0.3s;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #e57c00;
+}
+
+/* Giriş Ekranı */
+#welcome-screen h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#welcome-screen p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Zorluk Seçim Ekranı */
+#mode-selection h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+#mode-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Oyun Ekranı */
+#map {
+    height: 500px;
+    /* Yüksekliği artırıldı */
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    /* Genişliği artırıldı */
+    max-width: 1000px;
+    /* Maksimum genişlik ayarlandı */
+}
+
+
+#question-container {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+#score {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.feedback-message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ff9800;
+    /* Mesaj rengi */
+    font-weight: bold;
+}
+
+
+/* Skor Tablosu */
+#leaderboard h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+#leaderboard p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+#leaderboard .btn {
+    margin-top: 20px;
+}
