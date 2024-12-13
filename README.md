@@ -85,3 +85,75 @@ Three key event handlers implemented in the project:
        const clickedLatLng = e.latlng;
        // Logic for checking correctness and updating scores
    }
+
+
+2.Mode Selection Buttons:
+
+Captures user-selected difficulty levels and initializes the game.
+
+document.querySelectorAll(".mode-button").forEach(button => {
+    button.addEventListener("click", (e) => {
+        currentMode = e.target.dataset.mode;
+        startGame();
+    });
+});
+3.Restart Button:
+
+Resets the game and returns the user to the mode selection screen.
+restartButton.addEventListener("click", showModeSelection);
+
+4.Closures
+Closures are used to encapsulate variables and streamline repetitive tasks:
+
+Current Question State:
+
+The loadQuestion function uses closures to capture and reuse currentIndex and currentMode.
+function loadQuestion() {
+    const question = hints[currentMode][currentIndex];
+    hintElement.textContent = question.hint;
+}
+Benefits:
+
+Simplifies the logic for updating the question, score, and map state.
+Reduces redundancy by maintaining game state locally.
+Learning from AI 
+What I Learned from AI:
+
+Debugging and optimizing map interactivity and scoring logic.
+Simplifying complex JavaScript functionalities using modular code.
+Designing an engaging gameplay loop with hints, feedback, and animations.
+AI Interaction Log:
+
+URL: https://chatgpt.com/
+DOM Interaction 
+The project interacts with the DOM to dynamically update game elements:
+
+Hint Updates:
+hintElement.textContent = question.hint;
+Feedback Messages:
+
+feedbackMessage.textContent = `Doğru cevap: ${question.city}`;
+Result Screen Updates:
+
+finalScoreElement.textContent = `Toplam Puan: ${score}`;
+timeReport.textContent = `Geçen Süre: ${totalTime} saniye`;
+Interactivity/Complexity/Fun 
+Dynamic Scoring:
+Scores vary based on user accuracy (10 points for the first attempt, 5 for the second).
+Progressive Hints:
+Provides more specific hints if the user fails the first attempt.
+Interactive Map:
+Users can explore and click locations directly on the map.
+Responsive Design:
+The layout adapts to desktop and mobile devices for a seamless experience.
+How to Run
+Clone the repository:
+bash
+git clone [Insert Repository URL]
+Open index.html in your browser.
+Alternatively, access the live version: [Insert GitHub Pages URL]
+Future Enhancements
+Add more geographic regions and global challenges.
+Introduce animations for correct and incorrect guesses.
+Implement a leaderboard system for competitive gameplay.
+
