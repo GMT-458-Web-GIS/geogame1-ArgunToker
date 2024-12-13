@@ -129,30 +129,41 @@ URL: https://chatgpt.com/
 DOM Interaction 
 The project interacts with the DOM to dynamically update game elements:
 
-Hint Updates:
+1.Hint Updates:
+
 hintElement.textContent = question.hint;
-Feedback Messages:
+
+2.Feedback Messages:
 
 feedbackMessage.textContent = `Doğru cevap: ${question.city}`;
-Result Screen Updates:
 
+3.Result Screen Updates:
 finalScoreElement.textContent = `Toplam Puan: ${score}`;
 timeReport.textContent = `Geçen Süre: ${totalTime} saniye`;
+
 Interactivity/Complexity/Fun 
-Dynamic Scoring:
+1.Dynamic Scoring:
+
 Scores vary based on user accuracy (10 points for the first attempt, 5 for the second).
-Progressive Hints:
+
+2.Progressive Hints:
+
 Provides more specific hints if the user fails the first attempt.
-Interactive Map:
+
+3.Interactive Map:
+
 Users can explore and click locations directly on the map.
-Responsive Design:
+4.Responsive Design:
+
 The layout adapts to desktop and mobile devices for a seamless experience.
+
 How to Run
 Clone the repository:
 bash
-git clone [Insert Repository URL]
+git clone https://gmt-458-web-gis.github.io/geogame1-ArgunToker/
 Open index.html in your browser.
-Alternatively, access the live version: [Insert GitHub Pages URL]
+Alternatively, access the live version: https://github.com/GMT-458-Web-GIS/geogame1-ArgunToker/
+
 Future Enhancements
 Add more geographic regions and global challenges.
 Introduce animations for correct and incorrect guesses.
